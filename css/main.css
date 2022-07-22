@@ -23,7 +23,7 @@
   --highlight-gutter-background: #e1e1e1;
   --highlight-gutter-foreground: #555;
   color-scheme: light;
-  background: no-repeat url("/images/bg.png");
+  background: no-repeat url("https://tigercrl.github.io/images/bg.png");
 }
 html {
   line-height: 1.15; /* 1 */
