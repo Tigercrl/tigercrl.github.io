@@ -2878,6 +2878,21 @@ mark.search-keyword {
     padding: 10px 12px;
   }
 }
+.exif-container {
+  position: relative;
+}
+.exif-container .exif-metabar {
+  background: rgba(0,0,0,0.5);
+  bottom: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  width: 100%;
+}
+.exif-container .exif-metabar span {
+  color: #fff;
+  font-style: italic;
+  margin: 0 1em;
+}
 body {
   background: url("/images/bg.png");
   background-size: cover;
