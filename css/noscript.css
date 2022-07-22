@@ -32,3 +32,10 @@ body {
 .sidebar-panel {
   display: block;
 }
+body {
+  background: url("https://tigercrl.github.io/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
