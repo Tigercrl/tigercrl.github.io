@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>JDK的安装</title>
-    <url>/MCTechGuide/2022/07/21/JDK%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <url>/2022/07/21/JDK%E7%9A%84%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>从Minecraft1.17开始，Minecraft要求电脑需要JDK16以上，而1.18更是要JDK17以上。所以，在安装游戏之前，需要先安装最新版的JDK。</p>
 <h2 id="JDK的安装"><a href="#JDK的安装" class="headerlink" title="JDK的安装"></a>JDK的安装</h2><p>在我写这篇文章的时候，最新的JDK是18，那么就给大家演示JDK18的安装</p>
 <h3 id="下载安装包"><a href="#下载安装包" class="headerlink" title="下载安装包"></a>下载安装包</h3><p>在<a href="https://www.oracle.com/java/technologies/downloads/">甲骨文Java官网</a>可以下载到最新版的JDK</p>
@@ -36,7 +36,7 @@
   </entry>
   <entry>
     <title>启动器的安装</title>
-    <url>/MCTechGuide/2022/07/21/%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <url>/2022/07/21/%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>装完了JDK后，就要安装启动器了。我推荐的话是HMCL和PCL，除此之外还有MultiMC和Minecraft官方启动器，本文讲提供以上列出的启动器安装方法。</p>
 <h2 id="启动器的安装"><a href="#启动器的安装" class="headerlink" title="启动器的安装"></a>启动器的安装</h2><h3 id="HMCL启动器-Hello-Minecraft-Launcher"><a href="#HMCL启动器-Hello-Minecraft-Launcher" class="headerlink" title="HMCL启动器(Hello Minecraft Launcher)"></a><a href="https://hmcl.huangyuhui.net/">HMCL启动器(Hello Minecraft Launcher)</a></h3><p><em>适用于：Windows MacOS Linux</em></p>
 <p>首先，前往<a href="https://hmcl.huangyuhui.net/">HMCL官网</a>，然后点击右上角的<code>Jenkins CI</code>进入Jenkins页面</p>
