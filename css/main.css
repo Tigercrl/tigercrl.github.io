@@ -1,3 +1,10 @@
+body {
+  background: url("https://tigercrl.github.io/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
 :root {
   --body-bg-color: #eee;
   --content-bg-color: #fff;
@@ -23,13 +30,6 @@
   --highlight-gutter-background: #e1e1e1;
   --highlight-gutter-foreground: #555;
   color-scheme: light;
-}
-body {
-  background: url("https://tigercrl.github.io/images/bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
 }
 html {
   line-height: 1.15; /* 1 */
