@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Minecraft · JDK的安装</title>
+    <url>/2022/07/21/JDK%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>从Minecraft1.17开始，Minecraft要求电脑需要JDK16以上，而1.18更是要JDK17以上。所以，在安装游戏之前，需要先安装最新版的JDK。</p>
+<h2 id="Minecraft安装-·-JDK的安装"><a href="#Minecraft安装-·-JDK的安装" class="headerlink" title="Minecraft安装 · JDK的安装"></a>Minecraft安装 · JDK的安装</h2><p>在我写这篇文章的时候，最新的JDK是18，那么就给大家演示JDK18的安装</p>
+<h3 id="下载安装包"><a href="#下载安装包" class="headerlink" title="下载安装包"></a>下载安装包</h3><p>在<a href="https://www.oracle.com/java/technologies/downloads/">甲骨文Java官网</a>可以下载到最新版的JDK</p>
+<blockquote>
+<p>Windows系统请选择在Windows分栏里的<code>x64 Installer</code>或者<code>x64 MSI Installer</code>下载</p>
+</blockquote>
+<img src="/images/MCTechGuide_1_1.png" alt="安装包下载 - Windows" />
+
+<blockquote>
+<p>Intel芯片的Mac系统请选择<code>x64 DMG Installer</code></p>
+</blockquote>
+<blockquote>
+<p>Apple芯片的Mac系统请选择<code>Arm 64 DMG Installer</code></p>
+</blockquote>
+<img src="/images/MCTechGuide_1_2.png" alt="安装包下载 - MacOS" />
+
+<blockquote>
+<p>Linux系统请根据自己的系统来选择下列框选的安装包</p>
+</blockquote>
+<img src="/images/MCTechGuide_1_3.png" alt="安装包下载 - Linux" />
+
+<p>选择完毕后请点击右侧链接进行下载</p>
+<h3 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h3><p>安装完成后，找到安装包文件</p>
+<ul>
+<li>Windows系统可以直接打开安装包文件</li>
+<li>Mac系统需打开DMG文件，再点击其中的.app文件</li>
+<li>Linux系统我也不太清楚，可以自己上网搜一下<br></li>
+</ul>
+<p>打开后按照提示同意许可后即可下载</p>
+<h3 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h3><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+  </entry>
+  <entry>
     <title>Minecraft安装 · 启动器的安装</title>
     <url>/2022/07/21/%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>装完了<a href="/2022/07/21/JDK%E7%9A%84%E5%AE%89%E8%A3%85/">JDK</a>后，就要安装启动器了。我推荐的话是HMCL和PCL，除此之外还有MultiMC和Minecraft官方启动器，本文讲提供以上列出的启动器安装方法。</p>
@@ -43,40 +77,6 @@
 <p>下载完成后</p>
 <p>Windows系统下载后双击并进行安装即可</p>
 <p>Mac系统打开DMG后将Minecraft.app拖入旁边的Applications即可</p>
-<h3 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h3><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-  </entry>
-  <entry>
-    <title>Minecraft · JDK的安装</title>
-    <url>/2022/07/21/JDK%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<p>从Minecraft1.17开始，Minecraft要求电脑需要JDK16以上，而1.18更是要JDK17以上。所以，在安装游戏之前，需要先安装最新版的JDK。</p>
-<h2 id="Minecraft安装-·-JDK的安装"><a href="#Minecraft安装-·-JDK的安装" class="headerlink" title="Minecraft安装 · JDK的安装"></a>Minecraft安装 · JDK的安装</h2><p>在我写这篇文章的时候，最新的JDK是18，那么就给大家演示JDK18的安装</p>
-<h3 id="下载安装包"><a href="#下载安装包" class="headerlink" title="下载安装包"></a>下载安装包</h3><p>在<a href="https://www.oracle.com/java/technologies/downloads/">甲骨文Java官网</a>可以下载到最新版的JDK</p>
-<blockquote>
-<p>Windows系统请选择在Windows分栏里的<code>x64 Installer</code>或者<code>x64 MSI Installer</code>下载</p>
-</blockquote>
-<img src="/images/MCTechGuide_1_1.png" alt="安装包下载 - Windows" />
-
-<blockquote>
-<p>Intel芯片的Mac系统请选择<code>x64 DMG Installer</code></p>
-</blockquote>
-<blockquote>
-<p>Apple芯片的Mac系统请选择<code>Arm 64 DMG Installer</code></p>
-</blockquote>
-<img src="/images/MCTechGuide_1_2.png" alt="安装包下载 - MacOS" />
-
-<blockquote>
-<p>Linux系统请根据自己的系统来选择下列框选的安装包</p>
-</blockquote>
-<img src="/images/MCTechGuide_1_3.png" alt="安装包下载 - Linux" />
-
-<p>选择完毕后请点击右侧链接进行下载</p>
-<h3 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h3><p>安装完成后，找到安装包文件</p>
-<ul>
-<li>Windows系统可以直接打开安装包文件</li>
-<li>Mac系统需打开DMG文件，再点击其中的.app文件</li>
-<li>Linux系统我也不太清楚，可以自己上网搜一下<br></li>
-</ul>
-<p>打开后按照提示同意许可后即可下载</p>
 <h3 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h3><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
   </entry>
 </search>
