@@ -78,6 +78,8 @@ document.querySelectorAll(".popup-trigger").forEach(s=>{s.addEventListener("clic
 setTimeout(()=>t.focus(),500),e.isfetched||e.fetchData()})});
 // Monitor main search box
 const c=()=>{document.body.classList.remove("search-active")};document.querySelector(".search-pop-overlay").addEventListener("click",e=>{e.target===document.querySelector(".search-pop-overlay")&&c()}),document.querySelector(".popup-btn-close").addEventListener("click",c),document.addEventListener("pjax:success",()=>{e.highlightSearchWords(document.querySelector(".post-body")),c()}),window.addEventListener("keyup",e=>{"Escape"===e.key&&c()})});;
+/* global NexT, CONFIG, PDFObject */
+document.addEventListener("page:loaded",()=>{document.querySelectorAll(".pdf-container").length&&NexT.utils.getScript(CONFIG.pdf.object_url,{condition:window.PDFObject}).then(()=>{document.querySelectorAll(".pdf-container").forEach(e=>{PDFObject.embed(e.dataset.target,e,{pdfOpenParams:{navpanes:0,toolbar:0,statusbar:0,pagemode:"thumbs",view:"FitH"},PDFJS_URL:CONFIG.pdf.url,height:e.dataset.height})})})});;
 document.addEventListener("page:loaded",()=>{
 /**
    * Wrap images with fancybox.
