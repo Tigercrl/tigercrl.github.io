@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Minecraft · JDK的安装</title>
+    <title>Minecraft安装 · JDK的安装</title>
     <url>/2022/07/21/JDK%E7%9A%84%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>从Minecraft1.17开始，Minecraft要求电脑需要JDK16以上，而1.18更是要JDK17以上。所以，在安装游戏之前，需要先安装最新版的JDK。</p>
 <h2 id="Minecraft安装-·-JDK的安装"><a href="#Minecraft安装-·-JDK的安装" class="headerlink" title="Minecraft安装 · JDK的安装"></a>Minecraft安装 · JDK的安装</h2><p>在我写这篇文章的时候，最新的JDK是18，那么就给大家演示JDK18的安装</p>
