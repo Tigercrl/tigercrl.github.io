@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>简洁搜索引擎</title>
+    <url>/2022/11/30/%E7%AE%80%E6%B4%81%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</url>
+    <content><![CDATA[<p>最近闲的没事，做了个简洁版的搜索引擎页面，以后可能会做更多的搜索引擎简洁版界面</p>
+<p>这是仓库地址：</p>
+<p><code>https://github.com/Tigercrl/ConciseSearchEngines</code></p>
+<p>这是 GitHub Pages 网站：</p>
+<p><code>https://tigercrl.github.io/ConciseSearchEngines/</code></p>
+<h2 id="预览图"><a href="#预览图" class="headerlink" title="预览图"></a>预览图</h2><p>百度：</p>
+<img src="/images/CSE_baidu.png">
+
+<p>360：</p>
+<img src="/images/CSE_360.png">
+
+<p>搜狗：</p>
+<img src="/images/CSE_sogou.png">
+
+<p>GitHub：</p>
+<img src="/images/CSE_github.png">
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>html</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Minecraft 安装・启动器的配置</title>
+    <url>/2022/07/27/%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>装完了<a href="/2022/07/21/%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85">启动器</a>后，是不是对启动器的功能非常疑惑？今天我来带大家认识一下 HMCL 和 PCL 的全部功能！</p>
+<h2 id="Minecraft安装-·-启动器的配置"><a href="#Minecraft安装-·-启动器的配置" class="headerlink" title="Minecraft安装 · 启动器的配置"></a>Minecraft 安装・启动器的配置</h2><h3 id="HMCL启动器"><a href="#HMCL启动器" class="headerlink" title="HMCL启动器"></a>HMCL 启动器</h3><p>HMCL 启动器主要分为 3 个板块：<a href="">账户</a>、<a href="">游戏</a>和<a href="">设置</a>，让我们依次讲一下吧！</p>
+<h4 id="账户"><a href="#账户" class="headerlink" title="账户"></a>账户</h4><p>HMCL 支持 4 种账户的登陆：<code>离线账户</code>、<code>外置账户</code>、<code>Mojang账户</code>和<code>微软账户</code></p>
+<h5 id="进入"><a href="#进入" class="headerlink" title="进入"></a>进入</h5><p>点击 HMCL 左上角的<code>玩家头像</code>，即可进入账户页面</p>
+<img src="/images/MCTechGuide_3_1.png" alt="点击玩家头像，进入账户页面">
+
+<h5 id="离线账户"><a href="#离线账户" class="headerlink" title="离线账户"></a>离线账户</h5><p>离线账户是一种免费的账户，俗称盗版账户，不能拥有皮肤。而且 ID 可以随便设</p>
+<p>所以可以在某些支持离线账户的服务器上盗别人的号或者被盗号，所以一般这种服务器会添加密码插件</p>
+<p>离线模式可以基本上玩到 Minecraft 的所有内容，但是不能进入正版服务器和使用 Realms</p>
+<h6 id="添加账户"><a href="#添加账户" class="headerlink" title="添加账户"></a>添加账户</h6><p>点击左侧的<code>离线模式</code></p>
+<img src="/images/MCTechGuide_3_2.png" alt="点击离线模式">
+
+<p>输入你想要的 ID 即可</p>
+<img src="/images/MCTechGuide_3_3.png" alt="输入ID">
+
+<p>还可以自定义 UUID（不会不要乱动）</p>
+<img src="/images/MCTechGuide_3_4.png" alt="自定义UUID">
+
+<h5 id="外置账户"><a href="#外置账户" class="headerlink" title="外置账户"></a>外置账户</h5><p>外置账户和离线模式一样，免费，可随便设 ID，但是能拥有皮肤。</p>
+<h6 id="设置皮肤站"><a href="#设置皮肤站" class="headerlink" title="设置皮肤站"></a>设置皮肤站</h6><p>外置账户的登陆需要皮肤站设置，我以后会单独出一期设置皮肤站的文章</p>
+<h6 id="添加认证服务器"><a href="#添加认证服务器" class="headerlink" title="添加认证服务器"></a>添加认证服务器</h6><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
+      <tags>
+        <tag>Minecraft配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Minecraft 安装・JDK 的安装</title>
     <url>/2022/07/21/JDK%E7%9A%84%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>从 Minecraft1.17 开始，Minecraft 要求电脑需要 JDK16 以上，而 1.18 更是要 JDK17 以上。所以，在安装游戏之前，需要先安装最新版的 JDK。</p>
@@ -38,34 +91,6 @@
       </categories>
       <tags>
         <tag>Minecraft安装</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Minecraft 安装・启动器的配置</title>
-    <url>/2022/07/27/%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>装完了<a href="/2022/07/21/%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85">启动器</a>后，是不是对启动器的功能非常疑惑？今天我来带大家认识一下 HMCL 和 PCL 的全部功能！</p>
-<h2 id="Minecraft安装-·-启动器的配置"><a href="#Minecraft安装-·-启动器的配置" class="headerlink" title="Minecraft安装 · 启动器的配置"></a>Minecraft 安装・启动器的配置</h2><h3 id="HMCL启动器"><a href="#HMCL启动器" class="headerlink" title="HMCL启动器"></a>HMCL 启动器</h3><p>HMCL 启动器主要分为 3 个板块：<a href="">账户</a>、<a href="">游戏</a>和<a href="">设置</a>，让我们依次讲一下吧！</p>
-<h4 id="账户"><a href="#账户" class="headerlink" title="账户"></a>账户</h4><p>HMCL 支持 4 种账户的登陆：<code>离线账户</code>、<code>外置账户</code>、<code>Mojang账户</code>和<code>微软账户</code></p>
-<h5 id="进入"><a href="#进入" class="headerlink" title="进入"></a>进入</h5><p>点击 HMCL 左上角的<code>玩家头像</code>，即可进入账户页面</p>
-<img src="/images/MCTechGuide_3_1.png" alt="点击玩家头像，进入账户页面">
-
-<h5 id="离线账户"><a href="#离线账户" class="headerlink" title="离线账户"></a>离线账户</h5><p>离线账户是一种免费的账户，俗称盗版账户，不能拥有皮肤。而且 ID 可以随便设</p>
-<p>所以可以在某些支持离线账户的服务器上盗别人的号或者被盗号，所以一般这种服务器会添加密码插件</p>
-<p>离线模式可以基本上玩到 Minecraft 的所有内容，但是不能进入正版服务器和使用 Realms</p>
-<h6 id="添加账户"><a href="#添加账户" class="headerlink" title="添加账户"></a>添加账户</h6><p>点击左侧的<code>离线模式</code></p>
-<img src="/images/MCTechGuide_3_2.png" alt="点击离线模式">
-
-<p>输入你想要的 ID 即可</p>
-<img src="/images/MCTechGuide_3_3.png" alt="输入ID">
-
-<p>还可以自定义 UUID（不会不要乱动）</p>
-<img src="/images/MCTechGuide_3_4.png" alt="自定义UUID">
-
-<h5 id="外置账户"><a href="#外置账户" class="headerlink" title="外置账户"></a>外置账户</h5><p>外置账户和离线模式一样，免费，可随便设 ID，但是能拥有皮肤。</p>
-<h6 id="设置皮肤站"><a href="#设置皮肤站" class="headerlink" title="设置皮肤站"></a>设置皮肤站</h6><p>外置账户的登陆需要皮肤站设置，我以后会单独出一期设置皮肤站的文章</p>
-<h6 id="添加认证服务器"><a href="#添加认证服务器" class="headerlink" title="添加认证服务器"></a>添加认证服务器</h6><link rel="stylesheet" href="/css/bilicard.css" type="text/css">]]></content>
-      <tags>
-        <tag>Minecraft配置</tag>
       </tags>
   </entry>
   <entry>
