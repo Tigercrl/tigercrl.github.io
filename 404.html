@@ -135,28 +135,25 @@
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2022/7/23
+            2023/3/6
         </span>
         
         
     </div>
     
     <div class="content" v-pre>
-        <h1 id="出现错误！-错误代码：404-Not-Found"><a href="#出现错误！-错误代码：404-Not-Found" class="headerlink" title="出现错误！(错误代码：404 Not Found)"></a><center>出现错误！(错误代码：404 Not Found)</center></h1><h3 id="你在找的页面处于量子叠加态！"><a href="#你在找的页面处于量子叠加态！" class="headerlink" title="你在找的页面处于量子叠加态！"></a><center>你在找的页面处于量子叠加态！</center></h3><h3 id="预计将在约-10-秒后返回首页"><a href="#预计将在约-10-秒后返回首页" class="headerlink" title="预计将在约 10 秒后返回首页"></a><center>预计将在约 <span id="countdown">10</span> 秒后返回首页</center></h3><h3 id="当然，你也可以-点这里-直接返回首页"><a href="#当然，你也可以-点这里-直接返回首页" class="headerlink" title="当然，你也可以 点这里 直接返回首页"></a><center>当然，你也可以 <strong><a href="/">点这里</a></strong> 直接返回首页</center></h3><script>
-  setTimeout(function(){startCount();}, 2000);
-  let countTime = 10;
-  function startCount() {
-    function count() {
-      document.getElementById('countdown').textContent = countTime;
-      countTime -= 1;
-      if(countTime === 0){
-        location.href = '/';
+        <h1 id="出现错误！-错误代码：404-Not-Found"><a href="#出现错误！-错误代码：404-Not-Found" class="headerlink" title="出现错误！(错误代码：404 Not Found)"></a><center>出现错误！(错误代码：404 Not Found)</center></h1><h3 id="你在找的页面处于量子叠加态！"><a href="#你在找的页面处于量子叠加态！" class="headerlink" title="你在找的页面处于量子叠加态！"></a><center>你在找的页面处于量子叠加态！</center></h3><h3 id="您未启用JavaScript，无法自动重定向至首页！"><a href="#您未启用JavaScript，无法自动重定向至首页！" class="headerlink" title="您未启用JavaScript，无法自动重定向至首页！"></a><center id="countdown">您未启用JavaScript，无法自动重定向至首页！</center></h3><h3 id="您可以直接-点这里-返回首页"><a href="#您可以直接-点这里-返回首页" class="headerlink" title="您可以直接 点这里 返回首页"></a><center>您可以直接 <strong><a href="/">点这里</a></strong> 返回首页</center></h3><script>
+  var redirectTime = new Date().getTime() + 5000;
+  function count(){
+      if(new Date().getTime() >= redirectTime){
+          location.href = '/';
+      }else{
+          document.getElementById("countdown").innerHTML = "将在" + Math.ceil((redirectTime - new Date().getTime()) / 1000) + "秒后自动返回到首页";
       }
-      setTimeout(() => {
-        count();
-      }, 1000);
-    }
-    count();
+  }
+  count();
+  window.onload = function () {
+      setInterval("count()", 100);
   }
 </script>
     </div>
@@ -187,6 +184,7 @@
         </div>
         <script src="/js/functions.js"></script>
 <script src="/js/particlex.js"></script>
+<script src="/js/inobounce.js"></script>
 
 
     </body>

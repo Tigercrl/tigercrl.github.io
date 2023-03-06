@@ -695,7 +695,7 @@ body {
     background: #f6f8fa;
     color: #000c;
     font: 500 14px Lexend, "Noto Sans SC", sans-serif;
-    overflow-x: hidden;
+	overflow-x: hidden;
     width: 100%;
 }
 button,
