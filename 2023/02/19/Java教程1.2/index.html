@@ -1,9 +1,11 @@
 
 <!DOCTYPE html>
 <html lang="zh_cn">
-    <head>
+    <head><!-- hexo injector head_begin start -->
+<link rel="stylesheet" href="/css/bilicard.css">
+<!-- hexo injector head_begin end -->
         <meta charset="UTF-8">
-        <title>404 Not Found | Tigerの小世界</title>
+        <title>Java教程 1.2 Java程序是如何运行的 | Tigerの小世界</title>
         <meta name="author" content="Tigercrl">
         <meta name="description" content="此生无悔入MC，来世还做方块人！">
         <meta name="keywords" content="">
@@ -128,65 +130,61 @@
 
                 <div class="article">
     <div>
-        <h1>404 Not Found </h1>
+        <h1>Java教程 1.2 Java程序是如何运行的 </h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2023/4/24
+            2023/2/19
         </span>
         
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Java%E6%95%99%E7%A8%8B/" style="color: #00a596">Java教程</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00a596">教程</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Java/" style="color: #ff7d73">Java</a>
+            </span>
+            
+        </span>
         
     </div>
     
     <div class="content" v-pre>
-        <h1 id="出现错误！-错误代码：404-Not-Found"><a href="#出现错误！-错误代码：404-Not-Found" class="headerlink" title="出现错误！(错误代码：404 Not Found)"></a><center>出现错误！(错误代码：404 Not Found)</center></h1><h3 id="你的JavaScript好像没开哦～"><a href="#你的JavaScript好像没开哦～" class="headerlink" title="你的JavaScript好像没开哦～"></a><center id="404-text">你的JavaScript好像没开哦～</center></h3><h3 id="您未启用JavaScript，无法自动重定向至首页！"><a href="#您未启用JavaScript，无法自动重定向至首页！" class="headerlink" title="您未启用JavaScript，无法自动重定向至首页！"></a><center id="countdown">您未启用JavaScript，无法自动重定向至首页！</center></h3><h3 id="您可以直接-点这里-返回首页"><a href="#您可以直接-点这里-返回首页" class="headerlink" title="您可以直接 点这里 返回首页"></a><center>您可以直接 <strong><a href="/">点这里</a></strong> 返回首页</center></h3><script>
-  // 倒计时和重定向
-  var redirectTime = new Date().getTime() + 5000;
-  function count(){
-      if(new Date().getTime() >= redirectTime){
-          location.href = '/';
-      }else{
-          document.getElementById("countdown").innerHTML = "将在" + Math.ceil((redirectTime - new Date().getTime()) / 1000) + "秒后自动返回到首页";
-      }
-  }
-  count();
-  window.onload = function () {
-      setInterval("count()", 100);
-  }
-  // 404提示
-  var texts = [
-    "你要找的页面被人揉巴揉巴扔了..",
-    "你要找的页面现已退役..",
-    "Sssss.. 什么声音? Sss.. 啊.. BOOM!",
-    "你要找的页面似乎没能和你达成共识..",
-    "你要找的页面带着狗去捡垃圾了..",
-    "我想这个页面走了一些弯路..",
-    "你要找的页面似乎不能和你同台竞技..",
-    "你要找的页面回家过节了..",
-    "你要找的页面坐着矿车逃走了..",
-    "你要找的页面被人丢进了打粉机..",
-    "你要找的页面爆炸了!!",
-    "我们对此页面无法显示表示强烈谴责..",
-    "你要找的页面被恶魂烧焦了..",
-    "你要找的页面被铁傀儡一巴掌拍飞了!",
-    "你要找的页面被外星人抓走了..",
-    "你或许可以为此页面造一个“刷页笼”..",
-    "你要找的页面掉!漆!了!..",
-    "你要找的页面似乎坠入了虚空..",
-    "你要找的页面去打麻将了..",
-    "你要找的页面上面坐着一只豹猫..",
-    "你要找的页面被雨淋湿了..",
-    "你要找的页面正处于量子叠加态..",
-    "你要找的页面被吃掉了!",
-    "你要找的页面被史莱姆一屁股坐扁了!",
-    "从前有座山，山上有座庙，庙里有个页面，现在找不到！"
-];
-document.getElementById('404-text').innerHTML = texts[parseInt(Math.random()*(texts.length)+1,10)];
-</script>
+        <p>Java 程序的运行必须经过编写、编译和运行 3 个步骤。</p>
+<h2 id="编写"><a href="#编写" class="headerlink" title="编写"></a>编写</h2><p>编写指的就是写代码了。Java程序的代码文件是以 <strong>.java</strong> 结尾的文本文件。</p>
+<h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><p>Java程序写完后，需要编译才可运行。</p>
+<p>编译就是把你写的代码转化为你的电脑可以理解的、由二进制组成的可运行文件。在Java中，编译好的程序是由 <strong>.class</strong> 结尾的。</p>
+<p>在编译完成后，会转成二进制，所以不能直接查看程序的代码，必须使用 <strong>反编译软件</strong> 才可转换成可读的代码。</p>
+<p>一般情况下，一个制作完成的程序要给别人运行，只需要给编译好的class文件就可以了，不用给java文件然后在另一个电脑上再次编译。</p>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>运行就很好理解了，就是把编译好的class文件运行就好了。虽然class文件支持在所有系统上运行但是需要电脑上装了JRE或JDK才可正常运行。</p>
+<p><a href="https://tigercrl.github.io/2023/02/14/Java%E6%95%99%E7%A8%8B%E7%9B%AE%E5%BD%95/">[返回目录]</a></p>
+
     </div>
+    
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
     
     
 </div>
@@ -215,6 +213,28 @@ document.getElementById('404-text').innerHTML = texts[parseInt(Math.random()*(te
         <script src="/js/functions.js"></script>
 <script src="/js/particlex.js"></script>
 <script src="/js/inobounce.js"></script>
+
+
+
+<script
+    src="https://giscus.app/client.js"
+    data-repo="Tigercrl/GiscusComments"
+    data-repo-id="R_kgDOI6Upzg"
+    data-category="General"
+    data-category-id="DIC_kwDOI6Upzs4CUBow"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin
+    async
+></script>
+
+
+
 
 
     </body>

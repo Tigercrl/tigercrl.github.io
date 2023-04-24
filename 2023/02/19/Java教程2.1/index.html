@@ -1,9 +1,11 @@
 
 <!DOCTYPE html>
 <html lang="zh_cn">
-    <head>
+    <head><!-- hexo injector head_begin start -->
+<link rel="stylesheet" href="/css/bilicard.css">
+<!-- hexo injector head_begin end -->
         <meta charset="UTF-8">
-        <title>404 Not Found | Tigerの小世界</title>
+        <title>Java教程 1.2 Java开发工具包 | Tigerの小世界</title>
         <meta name="author" content="Tigercrl">
         <meta name="description" content="此生无悔入MC，来世还做方块人！">
         <meta name="keywords" content="">
@@ -128,65 +130,71 @@
 
                 <div class="article">
     <div>
-        <h1>404 Not Found </h1>
+        <h1>Java教程 1.2 Java开发工具包 </h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2023/4/24
+            2023/2/19
         </span>
         
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Java%E6%95%99%E7%A8%8B/" style="color: #ff7d73">Java教程</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #03a9f4">教程</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Java/" style="color: #03a9f4">Java</a>
+            </span>
+            
+        </span>
         
     </div>
     
     <div class="content" v-pre>
-        <h1 id="出现错误！-错误代码：404-Not-Found"><a href="#出现错误！-错误代码：404-Not-Found" class="headerlink" title="出现错误！(错误代码：404 Not Found)"></a><center>出现错误！(错误代码：404 Not Found)</center></h1><h3 id="你的JavaScript好像没开哦～"><a href="#你的JavaScript好像没开哦～" class="headerlink" title="你的JavaScript好像没开哦～"></a><center id="404-text">你的JavaScript好像没开哦～</center></h3><h3 id="您未启用JavaScript，无法自动重定向至首页！"><a href="#您未启用JavaScript，无法自动重定向至首页！" class="headerlink" title="您未启用JavaScript，无法自动重定向至首页！"></a><center id="countdown">您未启用JavaScript，无法自动重定向至首页！</center></h3><h3 id="您可以直接-点这里-返回首页"><a href="#您可以直接-点这里-返回首页" class="headerlink" title="您可以直接 点这里 返回首页"></a><center>您可以直接 <strong><a href="/">点这里</a></strong> 返回首页</center></h3><script>
-  // 倒计时和重定向
-  var redirectTime = new Date().getTime() + 5000;
-  function count(){
-      if(new Date().getTime() >= redirectTime){
-          location.href = '/';
-      }else{
-          document.getElementById("countdown").innerHTML = "将在" + Math.ceil((redirectTime - new Date().getTime()) / 1000) + "秒后自动返回到首页";
-      }
-  }
-  count();
-  window.onload = function () {
-      setInterval("count()", 100);
-  }
-  // 404提示
-  var texts = [
-    "你要找的页面被人揉巴揉巴扔了..",
-    "你要找的页面现已退役..",
-    "Sssss.. 什么声音? Sss.. 啊.. BOOM!",
-    "你要找的页面似乎没能和你达成共识..",
-    "你要找的页面带着狗去捡垃圾了..",
-    "我想这个页面走了一些弯路..",
-    "你要找的页面似乎不能和你同台竞技..",
-    "你要找的页面回家过节了..",
-    "你要找的页面坐着矿车逃走了..",
-    "你要找的页面被人丢进了打粉机..",
-    "你要找的页面爆炸了!!",
-    "我们对此页面无法显示表示强烈谴责..",
-    "你要找的页面被恶魂烧焦了..",
-    "你要找的页面被铁傀儡一巴掌拍飞了!",
-    "你要找的页面被外星人抓走了..",
-    "你或许可以为此页面造一个“刷页笼”..",
-    "你要找的页面掉!漆!了!..",
-    "你要找的页面似乎坠入了虚空..",
-    "你要找的页面去打麻将了..",
-    "你要找的页面上面坐着一只豹猫..",
-    "你要找的页面被雨淋湿了..",
-    "你要找的页面正处于量子叠加态..",
-    "你要找的页面被吃掉了!",
-    "你要找的页面被史莱姆一屁股坐扁了!",
-    "从前有座山，山上有座庙，庙里有个页面，现在找不到！"
-];
-document.getElementById('404-text').innerHTML = texts[parseInt(Math.random()*(texts.length)+1,10)];
-</script>
+        <h2 id="JVM、JRE和JDK"><a href="#JVM、JRE和JDK" class="headerlink" title="JVM、JRE和JDK"></a>JVM、JRE和JDK</h2><p>首先，我们要了解JVM、JRE和JDK是什么。</p>
+<p>JVM，全称Java Virtual Machine，也就是Java虚拟机。所有Java程序都在Java虚拟机中运行，这也就是Java能跨平台运行的原因，也是Java启动慢的原因。注意，Java虚拟机不想其它虚拟机一样内存和CPU功耗那么大，简单的程序一般也就50MB左右的内存占用。JVM还需要JRE的支持才能运行Java程序。</p>
+<p>JRE，全称Java Runtime Environment，也就是Java运行时环境，包含了JVM的所有功能。JRE可以运行<code>.class</code>文件，但不能编译<code>.java</code>文件。一般用于只运行不编译Java软件的服务器上。</p>
+<p>JDK，全称Java Developement Kit，也就是Java开发资源包，包含了JRE的所有功能。支持编译程序，运行程序等功能。写程序通常就用的是JDK。</p>
+<h2 id="JDK的安装"><a href="#JDK的安装" class="headerlink" title="JDK的安装"></a>JDK的安装</h2><h3 id="Windows和MacOS"><a href="#Windows和MacOS" class="headerlink" title="Windows和MacOS"></a>Windows和MacOS</h3><p>首先，进入<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/">Oracle官网的Java下载页面</a>。Java17是一个长期支持版本，建议大家用Java17。所以，找到下面的Java17按钮并点击，再点击Windows或MacOS。</p>
+<ul>
+<li>Windows7及以上请下载Windows栏的<code>x64 Installer</code></li>
+<li>Intel芯片的Mac请下载MacOS栏的<code>x64 DMG Installer</code></li>
+<li>Apple芯片的Mac请下载MacOS栏的<code>Arm 64 DMG Installer</code></li>
+</ul>
+<p>下载完成后，打开安装包并根据提示安装即可。</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>对于Linux系统，只需在终端输入下面的指令并根据步骤即可下载到JDK17。</p>
+<pre><code class="bash">sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:linuxuprising/java
+sudo apt install oracle-java17-installer
+</code></pre>
+<p><a href="https://tigercrl.github.io/2023/02/14/Java%E6%95%99%E7%A8%8B%E7%9B%AE%E5%BD%95/">[返回目录]</a></p>
+
     </div>
+    
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
     
     
 </div>
@@ -215,6 +223,28 @@ document.getElementById('404-text').innerHTML = texts[parseInt(Math.random()*(te
         <script src="/js/functions.js"></script>
 <script src="/js/particlex.js"></script>
 <script src="/js/inobounce.js"></script>
+
+
+
+<script
+    src="https://giscus.app/client.js"
+    data-repo="Tigercrl/GiscusComments"
+    data-repo-id="R_kgDOI6Upzg"
+    data-category="General"
+    data-category-id="DIC_kwDOI6Upzs4CUBow"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin
+    async
+></script>
+
+
+
 
 
     </body>
