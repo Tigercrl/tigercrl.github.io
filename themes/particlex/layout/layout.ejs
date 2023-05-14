@@ -1,0 +1,68 @@
+<%
+    let type = "post";
+    if (is_home())
+        type = "index";
+    else if (is_post())
+        type = "post";
+    else if (is_category() || page.type === "categories")
+        type = "categories";
+    else if (is_tag() || page.type === "tags")
+        type = "tags";
+    else if (is_archive())
+        type = "archives";
+    let title = "";
+    if (page.title)
+        title = page.title + " | ";
+    else if (is_category())
+        title = "Categories: " + page.category + " | ";
+    else if (is_tag())
+        title = "Tags: " + page.tag + " | ";
+    else if (is_archive())
+        title = "Archives | ";
+    title += config.title;
+%>
+<!DOCTYPE html>
+<html lang="<%- config.language %>">
+    <head>
+        <meta charset="UTF-8">
+        <title><%= title %></title>
+        <meta name="author" content="<%- config.author %>">
+        <meta name="description" content="<%- config.description %>">
+        <meta name="keywords" content="<%- config.keywords %>">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <link rel="icon" href="<%- url_for(theme.avatar) %>">
+        <script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.min.js"></script>
+        <script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/<%- theme.highlightStyle %>.min.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css">
+        <% if (theme.polyfill.enable) { %>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=<%- theme.polyfill.features.join(",") %>"></script>
+        <% } %>
+        <% if (theme.math.enable) { %>
+        <script src="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.js"></script>
+        <script src="https://cdn.staticfile.org/KaTeX/0.16.4/contrib/auto-render.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.css">
+        <% } %>
+        <% if (theme.crypto.enable && typeof page.secret !== "undefined") { %>
+        <script src="https://cdn.staticfile.org/crypto-js/4.1.1/crypto-js.min.js"></script>
+        <% } %>
+        <link rel="stylesheet" href="<%- url_for("/css/fonts.min.css") %>">
+        <link rel="stylesheet" href="<%- url_for("/css/particlex.css") %>">
+    </head>
+    <body>
+        <%- partial("loading") %>
+        <div id="layout">
+            <transition name="into">
+            <div id="main" v-show="showpage" style="display: -not-none">
+                <%- partial("menu") %>
+                <%- partial(type) %>
+                <%- partial("footer") %>
+            </div>
+            </transition>
+            <div id="showimg">
+                <img id="showimg-content">
+            </div>
+        </div>
+        <%- partial("script", { type }) %>
+    </body>
+</html>
